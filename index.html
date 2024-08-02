@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compra de criptomonedas usando Binance Smart Chain">
+    <title>Compra de Criptomonedas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.1/dist/web3.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="https://buy.rickcrypto.com/assets/RK%20Coin-cDYnxJta.png" alt="AarónSwap Logo" >
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="https://dexscreener.com/bsc/0xa2bd7c1b03a5de5f96e6152d62ed94d8c14d96f9">Mercado</a></li>
+                    <li><a href="staking.html">Staking</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="wallet-connect">
+                <button id="connectButton">Conectar Wallet</button>
+                <select id="walletSelect">
+                    <option value="metamask">MetaMask</option>
+                </select>
+            </div>
+        </header>
+        <main>
+            <section class="welcome">
+                <h1>Bienvenido a RickCoin Dao</h1>
+                <p>Conecta tu wallet e ingresa la cantidad que deseas comprar de RickCoin</p>
+            </section>
+            <section class="wallet">
+                <input type="number" id="bnbAmount" placeholder="Cantidad de BNB" step="0.01" min="0">
+                <button id="buyButton" disabled>Comprar Criptomonedas</button>
+                <div id="status" class="status-message">Conecta tu wallet para comenzar</div>
+            </section>
+            <section class="transactions">
+                <h2>Historial de Transacciones</h2>
+                <ul id="transactionList"></ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 PancakeSwap Clone. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
